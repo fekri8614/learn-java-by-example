@@ -15,5 +15,13 @@ public class UnluckyBrother {
         ) {
             System.out.println("Hesam's number: " + hesamNumber + " Hadi's number: " + hadiNumber);
         }
+
+        if (hesamNumber > hadiNumber) printMessage("Hesam won the game and Hadi has to buy it.");
+        else if (hadiNumber > hesamNumber) printMessage("Hadi won the game and Hesam has to buy it.");
+        else printMessage("Now they have to think about a third solution!");
+    }
+
+    private static void printMessage(String message) {
+        System.out.println(message);
     }
 }
